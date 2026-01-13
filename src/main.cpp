@@ -10,16 +10,16 @@
 int main() {
     bn::core::init();
 
-    bn::backdrop::set_color(bn::color(15, 0, 0));
+    bn::backdrop::set_color(bn::color(70, 0, 0));
 
     auto dot = bn::sprite_items::dot.create_sprite(0, 0);
 
-    bn::fixed speed = 1.5;
+    bn::fixed speed = 5.0;
 
     bn::fixed dy = 0;
-    bn::fixed gravity = .03;
+    bn::fixed gravity = .05;
 
-    bn::fixed jump_strength = 1;
+    bn::fixed jump_strength = 3.0;
 
     while(true) {
         if(bn::keypad::left_held()) {
